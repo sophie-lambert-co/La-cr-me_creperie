@@ -1,0 +1,690 @@
+/* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+    :root { font-family: 'Inter var', sans-serif; } 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+body {
+  margin: 0;
+  color: black;
+}
+
+.header {
+  display: block;
+  background:  url(../assets/image/decors-fond2.jpg);
+  width:100%;
+  height: 90vh;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#topbar {
+  position: fixed;
+  display:flex;
+  justify-content: flex-end;
+  box-shadow:dimgrey 0px 0px 20px 0px;
+  width: 100%;
+  height: 93px;
+  background-color:white; 
+  z-index: 10;
+}
+
+nav{
+  align-self: flex-end;
+  display: flex;
+  padding-right: 5vw;
+  padding-bottom: 10px;
+  }
+  
+  label{
+    display:none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .label:hover{
+  border-color: #12769B;
+ 
+  
+  }
+  
+  #toggle{
+  display:none;
+  }
+  
+  .menu{
+    margin-left: 30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+
+  .menu a {
+    color: black;
+    text-decoration: none;
+    transition: color .1s;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  a:hover {
+    color: #12769B;
+  }  
+
+  .baseline-items{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    align-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+ }
+
+ .logo-la-creme{
+  height: 30vh;
+  position:relative;top: 1vh;
+  margin-top: 200px;
+  margin-bottom: 50px;  
+}
+
+
+.fleche-bottom{
+  Padding:2px;
+  padding-top: 6px;
+  margin:0;
+  width: 4Vh;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #FFF;
+  background: #C6A989;
+  border: none;
+  cursor: pointer;
+  transition: .1s;
+  border-radius: 40px;
+  margin: 15px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:13px;
+  padding-top:16px;
+  position: relative;
+  width: 38vh;
+}
+
+.button:hover {
+  background:  #ab8256;
+  color:white;
+}
+
+.bouton-scroll-top {
+  width: 38px;
+  padding-top: 5px;
+  height: 35px;
+  background-color: #12769B;
+  border-bottom-left-radius: 40%;
+  border-top-left-radius: 40%;
+  position: fixed;
+  bottom: 240px;
+  right:0px; ;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.bouton-scroll-top:hover {
+  background-color: #113a49;
+}
+
+/*FIN HEADER */
+/*SECTION EQUIPE */
+
+.equipe{
+  display: flex;
+  justify-content:space-between;
+
+}
+.histoire{
+  padding: 20px;
+  margin: 30px;
+}
+
+.alexandre-couillon{
+  margin: 20px;
+  height: 35vh;
+  z-index: 2;
+}
+
+.photochef{
+  height: 70vh;
+  margin: 20px;
+}
+
+.texture{
+  z-index: 1;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+}
+
+/*FIN SECTION EQUIPE*/
+/* SECTION CREPERIE */
+
+#section-creperie{
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding:0%;
+  background: 
+      url(../assets/image/brush-bleu-2.png);
+  background-repeat: no-repeat;
+  background-position:bottom 0% right 0%;
+  background-size: 25vh;   
+}
+   
+.notre-creperie{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+
+img.la-salle {
+  width: 60%;
+  margin-right: 15px;
+  margin-left: 0;
+  margin-bottom: 0px;
+}
+
+.paragraphe-notre-creperie{
+  padding-bottom: 3vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 5vh;
+  margin-top: 0;
+  margin-left: 2vh;
+  margin-right: 2vh;
+
+}
+
+.galerie-image {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 0;
+  margin-bottom: 15vh;
+}
+
+img.photo-1{
+  width: 100%;
+  height: auto;
+}
+
+img.photo-2{
+  width: 100%;
+  height: auto;
+}
+
+img.photo-3{
+  width: 100%;
+  height: auto;
+}
+
+img.photo-1:hover{
+  width: 100%;
+  transition-duration: 1s;
+  transition-property: all;
+  border-radius: 30px;
+  scale: 1.33;
+  transform-origin: 90px;
+  box-shadow: 2px 2px 5px black;
+}
+
+img.photo-2:hover{
+  width: 100%;
+  transition-duration: 1s;
+  transition-property: all;
+  border-radius: 30px;
+  scale: 1.33;
+  box-shadow: 2px 2px 5px black;
+}
+
+img.photo-3:hover{
+  width: 100%;
+  transition-duration: 1s;
+  transition-property: all;
+  border-radius: 30px;
+  scale: 1.33;
+  transform-origin:100%;
+  box-shadow: 2px 2px 5px black;
+}
+
+/*FIN SECTION CREPERIE*/
+/*DEBUT SECTION CARTE */
+
+h2{
+  padding:10px 10px 0px 10px;
+  margin-top:20px ;
+  padding-left: 45vw;
+}
+
+#section-carte{
+  display:flex;
+  flex-direction:row;
+  align-content: flex-start;
+  padding-bottom: 15vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100vw;
+}
+
+ol{
+  padding: 10px;
+  width: 40vw;
+  list-style-type: none;
+}
+
+li{
+  padding-left: 0;
+  padding-bottom: 25px;
+}
+
+.liste-carte{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  padding: 10px;
+  margin: 2vw;
+}
+
+h3{
+  padding: 10px;
+  margin-left: 0vw;
+}
+
+.rectangle-trait{
+  display:none
+}
+
+/*FIN SECTION CARTES */
+/* DEBUT SECTION RESERVER + ADESSEE + HORAIRES */
+
+.reserver{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 100vw;
+  margin: 0px;
+  padding:0%;
+  background: url(../assets/image/brush-bleu-2.png);
+  background-repeat: no-repeat;
+  background-position:bottom 0% left 0%;
+  background-size: 25vh;    
+  }
+
+#bloc-info-resa{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 20px 30px 30px 30px;
+ }
+
+.horaires-localisation{
+    padding: 10px;
+    margin-left:12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+#reservez-votre-table{
+    margin: 0px;
+    padding: 0px;
+    }
+  
+.adresse{
+  line-height: 5VH;
+  margin-left: 0px;
+  
+}
+
+#bloc-resa{
+  width: 600px;
+  height: 600px;
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ou-sommes-nous{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+/* FIN SECTION RESERVER + ADESSEE + HORAIRES */
+/* DEBUT FOOTER */
+
+.bloc-footer{
+  width :100vw;
+  height:12vh;
+  background-color: #C6A989;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+.mention{
+  color: white;
+  align-items: flex-end;
+  padding: 2vw;
+}
+
+/* VERSION MOBILE */
+
+
+@media only screen and (max-width: 650px) {
+html {
+    font-size: 14px;
+    line-height:1.2 ;
+  }
+
+
+  /* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    align-content: center;
+    background: 
+        url(../assets/image/decors-fond2.jpg);
+        width:100%;
+        height: 65vh;
+  }
+  
+#topbar {
+    top: 0;
+    height: fit-content;
+    z-index: 10;
+  }
+
+
+nav{
+    flex-direction: column;
+    align-self: flex-end;
+    padding-bottom: 20px;
+    margin: 0;
+    padding:0;
+    width: 100vw;
+  }
+
+label{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 60px;
+    color:dimgrey;
+    cursor: pointer;
+    padding: 0%;
+    text-align: center;
+  }
+
+.label:hover{
+    font-size: 90px;
+    color: #12769B
+    }
+
+#toggle:checked + .menu {
+    display: flex;
+    align-items: center;
+  }
+
+.menu{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+.menu a{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 15px;
+  } 
+
+.logo-la-creme{
+    height: 105px;
+    position:relative;
+    margin-top: 150px;  
+  }
+ 
+.button{
+    display:none;
+  }
+  
+.bouton-scroll-top{
+    display: none;
+  }
+
+/*FIN HEADER */
+/*SECTION EQUIPE */
+
+.equipe{
+  flex-direction: column;
+  }
+
+.histoire{
+    padding: 3px; 
+  }
+
+.alexandre-couillon{
+    margin: 0px;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+.photochef{
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 5%;
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    border: 0;
+  }
+
+.texture{
+    height: auto;
+    margin-bottom: 23px;
+  }
+
+/*FIN SECTION EQUIPE*/
+/* SECTION CREPERIE */
+#section-creperie{
+  background: none;
+}
+
+.notre-creperie{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+}
+
+img.la-salle {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  margin: 0;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.paragraphe-notre-creperie{
+  padding: 3px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.galerie-image {
+  display:none;
+} 
+
+
+/*FIN SECTION CREPERIE*/
+/*DEBUT SECTION CARTE */
+
+h2{
+  padding:10px 10px 0px 10px;
+  margin-top:20px ;
+  padding-left: 40vw;
+}
+
+#section-carte{
+  display:flex;
+  flex-direction: column;
+  background-color: #FFF;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  margin-right: 6%;
+  margin-left: 2%;
+  padding-bottom:4% ;
+  }
+  
+  ol{
+    padding: 10px;
+    width: 80vw;
+    list-style-type: none;
+  }
+
+
+.rectangle-trait{
+  width: 70vw;
+  height: 3px;
+  background: #C6A989;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 7vh;
+}
+
+.rectangle-trait{
+  display:block;
+}
+
+
+/*FIN SECTION CARTES */
+/* DEBUT SECTION RESERVER + ADESSEE + HORAIRES */
+
+.reserver{
+  display: block;
+  background: none;  
+}
+
+
+#bloc-info-resa{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0; 
+}
+
+
+#reservez-votre-table{
+  margin-bottom: 8vw;
+  margin-left: 5vw;
+  margin-right: 2vh;
+  padding: 0px;
+  }
+
+.adresse{
+    line-height: 4VH;
+    padding: 5px;
+    margin:0;
+  }
+
+#bloc-resa{
+    display: flex;
+    width:100vw;
+    height: 60vh;
+  }
+
+.horaires-localisation{
+    margin-left :5%;
+    padding-left:  5%;
+  }
+
+h3{
+padding: 0;
+margin:0%
+  }
+
+.ou-sommes-nous{
+display: flex;
+justify-content: flex-start;
+margin-top: 8%;
+
+}
+
+  /* FIN SECTION RESERVER + ADESSEE + HORAIRES */
+/* DEBUT FOOTER */
+
+.bloc-footer{
+  width :100vw;
+  height:10vh;
+  background-color: #C6A989;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.mention{
+  color: white;
+  align-items: flex-end;
+  padding: 2vw;
+  font-size: 10px;
+}
+}
+/* bug avec le bouton scroll 
+problème de placement du footer + bloc resa /*
+
+ 

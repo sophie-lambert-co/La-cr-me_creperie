@@ -1,0 +1,14 @@
+# LA CREME
+
+## Description
+
+Ce projet est un site web d'une seule page pour une crêperie située à Dinan. Il est construit uniquement avec HTML et CSS. Le site comprend des sections pour présenter le menu, les heures d'ouverture, l'emplacement et un formulaire de contact.
+Exercice de Permière année FrontEND.
+
+### Structure du projet
+
+- `index.html` : Fichier principal du site web.
+- `styles.css` : Feuille de style du site web.
+- `assets` : Dossier contenant les images du site web.
+
+---
